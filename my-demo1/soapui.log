@@ -1,0 +1,235 @@
+2020-11-03 12:49:18,263 WARN  [SoapUI] Missing folder [C:\Users\HYperscale\Desktop\Demo_1\my-demo1\ext] for external libraries
+2020-11-03 12:49:18,800 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\HYperscale\soapui-settings.xml]
+2020-11-03 12:49:21,807 INFO  [WsdlProject] Loaded project from [file:/C:/Users/HYperscale/Desktop/Demo_1/my-demo1/WSDL%20Project-soapui-project.xml]
+2020-11-03 12:49:23,142 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [WSDL Project]
+2020-11-03 12:50:32,431 INFO  [SoapUITestCaseRunner] Running Project [WSDL Project], runType = SEQUENTIAL
+2020-11-03 12:50:32,457 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Create Customer TC]
+2020-11-03 12:50:32,501 INFO  [SoapUITestCaseRunner] running step [Create Customer]
+2020-11-03 12:50:33,985 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:50:33,987 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Create Customer TC], time taken: 1471ms, status: FINISHED
+2020-11-03 12:50:33,994 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Customer Repository TC]
+2020-11-03 12:50:33,996 INFO  [SoapUITestCaseRunner] running step [Customer Repository]
+2020-11-03 12:50:47,989 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:50:47,990 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Customer Repository TC], time taken: 13989ms, status: FINISHED
+2020-11-03 12:50:47,996 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Find Customer TC]
+2020-11-03 12:50:47,999 INFO  [SoapUITestCaseRunner] running step [Find Customer]
+2020-11-03 12:50:48,697 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:50:48,697 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Find Customer TC], time taken: 690ms, status: FINISHED
+2020-11-03 12:50:48,699 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Delete Customer TC]
+2020-11-03 12:50:48,700 INFO  [SoapUITestCaseRunner] running step [Delete Customer]
+2020-11-03 12:50:49,367 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:50:49,368 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Delete Customer TC], time taken: 664ms, status: FINISHED
+2020-11-03 12:50:49,374 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Property and Property transfer]
+2020-11-03 12:50:49,383 INFO  [SoapUITestCaseRunner] running step [property]
+2020-11-03 12:50:49,397 INFO  [SoapUITestCaseRunner] running step [Property Transfer]
+2020-11-03 12:50:49,883 INFO  [SoapUITestCaseRunner] running step [Create Customer]
+2020-11-03 12:50:52,009 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:50:52,016 INFO  [SoapUITestCaseRunner] running step [Customer Repository]
+2020-11-03 12:51:07,121 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:51:07,122 INFO  [SoapUITestCaseRunner] running step [CustomerId Property Transfer]
+2020-11-03 12:51:07,137 INFO  [SoapUITestCaseRunner] running step [Find Customer]
+2020-11-03 12:51:07,849 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:51:07,850 INFO  [SoapUITestCaseRunner] running step [Delete Customer]
+2020-11-03 12:51:08,877 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:51:08,878 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Property and Property transfer], time taken: 19351ms, status: FINISHED
+2020-11-03 12:51:08,885 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CustomerAddressRepository]
+2020-11-03 12:51:08,894 INFO  [SoapUITestCaseRunner] running step [JDBC Request]
+2020-11-03 12:51:09,246 ERROR [SoapUI] An error occurred [Access denied for user 'root'@'localhost' (using password: YES)], see error log for details
+2020-11-03 12:51:09,249 ERROR [errorlog] java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:864)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1707)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1217)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2220)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2015)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:768)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:270)
+	at com.eviware.soapui.support.jdbc.JdbcUtils.initConnection(JdbcUtils.java:72)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.getDatabaseConnection(JdbcSubmit.java:222)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.prepare(JdbcSubmit.java:265)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.runQuery(JdbcSubmit.java:201)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.run(JdbcSubmit.java:165)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.<init>(JdbcSubmit.java:79)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcRequest.submit(JdbcRequest.java:131)
+	at com.eviware.soapui.impl.wsdl.teststeps.JdbcRequestTestStep.run(JdbcRequestTestStep.java:209)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
+2020-11-03 12:51:09,612 ERROR [SoapUITestCaseRunner] JDBC Request failed, exporting to [C:\Users\HYperscale\Desktop\Demo_1\my-demo1\target/surefire-reports\TC02_CustomerAddressRepository-CustomerAddressRepository-JDBC_Request-0-FAILED.txt]
+2020-11-03 12:51:09,633 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CustomerAddressRepository], time taken: 713ms, status: FAILED
+2020-11-03 12:51:09,641 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [ProductRepository]
+2020-11-03 12:51:09,645 INFO  [SoapUITestCaseRunner] running step [GetProductType]
+2020-11-03 12:51:10,260 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:51:10,261 INFO  [SoapUITestCaseRunner] running step [Data Driven]
+2020-11-03 12:51:10,348 ERROR [SoapUI] An error occurred [C:\Users\BinitaRawat\Desktop\API-Testing-Batch-3\WSDL Project-Week 1\SKUIdFile.xls (The system cannot find the path specified)], see error log for details
+2020-11-03 12:51:10,349 ERROR [errorlog] java.io.FileNotFoundException: C:\Users\BinitaRawat\Desktop\API-Testing-Batch-3\WSDL Project-Week 1\SKUIdFile.xls (The system cannot find the path specified)
+java.io.FileNotFoundException: C:\Users\BinitaRawat\Desktop\API-Testing-Batch-3\WSDL Project-Week 1\SKUIdFile.xls (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:131)
+	at jxl.Workbook.getWorkbook(Workbook.java:213)
+	at jxl.Workbook.getWorkbook(Workbook.java:198)
+	at jxl.Workbook$getWorkbook.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at Script1.run(Script1.groovy:13)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:100)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:154)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
+2020-11-03 12:51:10,518 ERROR [SoapUITestCaseRunner] Data Driven failed, exporting to [C:\Users\HYperscale\Desktop\Demo_1\my-demo1\target/surefire-reports\TC03and_TC_04_ProductAnd_SalesRepository-ProductRepository-Data_Driven-0-FAILED.txt]
+2020-11-03 12:51:10,523 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [ProductRepository], time taken: 867ms, status: FAILED
+2020-11-03 12:51:10,585 INFO  [log] I should able to fetch the CSV report at the end of this TC
+2020-11-03 12:51:10,587 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CustomerRepository_Property and PropertyTransfer]
+2020-11-03 12:51:10,594 INFO  [SoapUITestCaseRunner] running step [property]
+2020-11-03 12:51:10,595 INFO  [SoapUITestCaseRunner] running step [Property Transfer]
+2020-11-03 12:51:10,600 INFO  [SoapUITestCaseRunner] running step [Create Customer]
+2020-11-03 12:51:12,555 INFO  [SchemaUtils] Added default schema from file:/C:/Users/HYperscale/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xop.xsd with targetNamespace http://www.w3.org/2004/08/xop/include
+2020-11-03 12:51:12,583 INFO  [SchemaUtils] Added default schema from file:/C:/Users/HYperscale/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/XMLSchema.xsd with targetNamespace http://www.w3.org/2001/XMLSchema
+2020-11-03 12:51:12,656 INFO  [SchemaUtils] Added default schema from file:/C:/Users/HYperscale/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xml.xsd with targetNamespace http://www.w3.org/XML/1998/namespace
+2020-11-03 12:51:12,659 INFO  [SchemaUtils] Added default schema from file:/C:/Users/HYperscale/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/swaref.xsd with targetNamespace http://ws-i.org/profiles/basic/1.1/xsd
+2020-11-03 12:51:12,664 INFO  [SchemaUtils] Added default schema from file:/C:/Users/HYperscale/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xmime200505.xsd with targetNamespace http://www.w3.org/2005/05/xmlmime
+2020-11-03 12:51:12,672 INFO  [SchemaUtils] Added default schema from file:/C:/Users/HYperscale/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xmime200411.xsd with targetNamespace http://www.w3.org/2004/11/xmlmime
+2020-11-03 12:51:12,678 INFO  [SchemaUtils] Added default schema from file:/C:/Users/HYperscale/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope.xsd with targetNamespace http://schemas.xmlsoap.org/soap/envelope/
+2020-11-03 12:51:12,684 INFO  [SchemaUtils] Added default schema from file:/C:/Users/HYperscale/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd with targetNamespace http://schemas.xmlsoap.org/soap/encoding/
+2020-11-03 12:51:12,689 INFO  [SchemaUtils] Added default schema from file:/C:/Users/HYperscale/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope12.xsd with targetNamespace http://www.w3.org/2003/05/soap-envelope
+2020-11-03 12:51:12,695 INFO  [SchemaUtils] Added default schema from file:/C:/Users/HYperscale/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd with targetNamespace http://www.w3.org/2003/05/soap-encoding
+2020-11-03 12:51:12,698 INFO  [SchemaUtils] Loading schema types from [file:/C:/Users/BinitaRawat/Desktop/API-Testing-Batch-3/WSDL%20Project-Week%201/SOAP%20API%20WSDL%20EndPoints/SOAP%20API%20WSDL%20EndPoints/customerCustomerRepositoryV1.xml]
+2020-11-03 12:51:12,701 INFO  [SchemaUtils] Getting schema file:/C:/Users/BinitaRawat/Desktop/API-Testing-Batch-3/WSDL%20Project-Week%201/SOAP%20API%20WSDL%20EndPoints/SOAP%20API%20WSDL%20EndPoints/customerCustomerRepositoryV1.xml
+2020-11-03 12:51:13,164 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:51:13,165 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+2020-11-03 12:51:13,167 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status VALID
+2020-11-03 12:51:13,169 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-11-03 12:51:13,172 INFO  [SoapUITestCaseRunner] running step [Customer Repository]
+2020-11-03 12:51:26,213 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:51:26,216 INFO  [SoapUITestCaseRunner] running step [CustomerId Property Transfer]
+2020-11-03 12:51:26,239 INFO  [SoapUITestCaseRunner] running step [Find Customer]
+2020-11-03 12:51:26,959 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:51:26,959 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-11-03 12:51:26,960 INFO  [SoapUITestCaseRunner] running step [Delete Customer]
+2020-11-03 12:51:27,900 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:51:27,901 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-11-03 12:51:27,929 INFO  [log] This will run at the end
+2020-11-03 12:51:29,261 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CustomerRepository_Property and PropertyTransfer], time taken: 17277ms, status: FINISHED
+2020-11-03 12:51:29,314 INFO  [log] I should able to fetch the CSV report at the end of this TC
+2020-11-03 12:51:29,323 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CustomerAddressRepository_Database_JDBC]
+2020-11-03 12:51:29,332 INFO  [SoapUITestCaseRunner] running step [JDBC Request]
+2020-11-03 12:51:29,389 ERROR [SoapUI] An error occurred [Access denied for user 'root'@'localhost' (using password: YES)], see error log for details
+2020-11-03 12:51:29,398 ERROR [errorlog] java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:864)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1707)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1217)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2220)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2015)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:768)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:385)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:323)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:270)
+	at com.eviware.soapui.support.jdbc.JdbcUtils.initConnection(JdbcUtils.java:72)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.getDatabaseConnection(JdbcSubmit.java:222)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.prepare(JdbcSubmit.java:265)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.runQuery(JdbcSubmit.java:201)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.run(JdbcSubmit.java:165)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcSubmit.<init>(JdbcSubmit.java:79)
+	at com.eviware.soapui.impl.wsdl.panels.teststeps.JdbcRequest.submit(JdbcRequest.java:131)
+	at com.eviware.soapui.impl.wsdl.teststeps.JdbcRequestTestStep.run(JdbcRequestTestStep.java:209)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
+2020-11-03 12:51:29,770 INFO  [SoapUITestCaseRunner] Assertion [JDBC Status] has status UNKNOWN
+2020-11-03 12:51:29,771 INFO  [SoapUITestCaseRunner] Assertion [JDBC Timeout] has status UNKNOWN
+2020-11-03 12:51:29,772 ERROR [SoapUITestCaseRunner] JDBC Request failed, exporting to [C:\Users\HYperscale\Desktop\Demo_1\my-demo1\target/surefire-reports\WSDL_Project_E2E_Testing-CustomerAddressRepository_Database_JDBC-JDBC_Request-0-FAILED.txt]
+2020-11-03 12:51:29,793 INFO  [log] This will run at the end
+2020-11-03 12:51:29,848 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CustomerAddressRepository_Database_JDBC], time taken: 419ms, status: FAILED
+2020-11-03 12:51:29,876 INFO  [log] I should able to fetch the CSV report at the end of this TC
+2020-11-03 12:51:29,880 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Productand SalesRepository_DataDrivenWithGroovy]
+2020-11-03 12:51:29,885 INFO  [SoapUITestCaseRunner] running step [GetProductType]
+2020-11-03 12:51:31,756 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:51:31,757 INFO  [SoapUITestCaseRunner] running step [Data Driven]
+2020-11-03 12:51:31,805 ERROR [SoapUI] An error occurred [C:\Users\BinitaRawat\Desktop\API-Testing-Batch-3\WSDL Project-Week 1\SKUIdFile.xls (The system cannot find the path specified)], see error log for details
+2020-11-03 12:51:31,807 ERROR [errorlog] java.io.FileNotFoundException: C:\Users\BinitaRawat\Desktop\API-Testing-Batch-3\WSDL Project-Week 1\SKUIdFile.xls (The system cannot find the path specified)
+java.io.FileNotFoundException: C:\Users\BinitaRawat\Desktop\API-Testing-Batch-3\WSDL Project-Week 1\SKUIdFile.xls (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:131)
+	at jxl.Workbook.getWorkbook(Workbook.java:213)
+	at jxl.Workbook.getWorkbook(Workbook.java:198)
+	at jxl.Workbook$getWorkbook.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at Script1.run(Script1.groovy:13)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:100)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:154)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:52)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:152)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:744)
+2020-11-03 12:51:31,962 ERROR [SoapUITestCaseRunner] Data Driven failed, exporting to [C:\Users\HYperscale\Desktop\Demo_1\my-demo1\target/surefire-reports\WSDL_Project_E2E_Testing-Productand_SalesRepository_DataDrivenWithGroovy-Data_Driven-0-FAILED.txt]
+2020-11-03 12:51:31,995 INFO  [log] This will run at the end
+2020-11-03 12:51:32,025 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Productand SalesRepository_DataDrivenWithGroovy], time taken: 2072ms, status: FAILED
+2020-11-03 12:51:32,078 INFO  [log] I should able to fetch the CSV report at the end of this TC
+2020-11-03 12:51:32,081 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [SalesRepository_PropertyExpansion]
+2020-11-03 12:51:32,084 INFO  [SoapUITestCaseRunner] running step [SaveSales]
+2020-11-03 12:51:33,193 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:51:33,194 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-11-03 12:51:33,195 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status VALID
+2020-11-03 12:51:33,197 INFO  [SoapUITestCaseRunner] running step [GetSalesList]
+2020-11-03 12:52:17,893 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:52:17,894 INFO  [SoapUITestCaseRunner] running step [GetSalesByOrderId]
+2020-11-03 12:52:18,792 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-11-03 12:52:18,848 INFO  [log] This will run at the end
+2020-11-03 12:52:19,056 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [SalesRepository_PropertyExpansion], time taken: 46697ms, status: FINISHED
+2020-11-03 12:52:19,118 INFO  [SoapUITestCaseRunner] Project [WSDL Project] finished with status [FAILED] in 106678ms
